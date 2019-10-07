@@ -24,7 +24,7 @@ int SocketConnect(int hSocket)
         int ServerPort = 80;
         struct sockaddr_in remote={0};
 
-        remote.sin_addr.s_addr = inet_addr("46.165.219.208"); //Local Host
+        remote.sin_addr.s_addr = inet_addr("127.0.0.1"); //Local Host
         remote.sin_family = AF_INET;
         remote.sin_port = htons(ServerPort);
 
